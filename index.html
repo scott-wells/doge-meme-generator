@@ -20,12 +20,12 @@
         <div class="inputs col py-5">
             <h5 class="pb-2">Input Meme Words:</h5>
             <input ng-model="input" type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
+            <input ng-model="input" type="text" />
+            <input ng-model="input" type="text" />
+            <input ng-model="input" type="text" />
             <div class="col py-3">
-                <button type="submit" >Meme It</button>
-                <button type="reset" >Reset</button>
+                <button ng-click="returnInput(input)" type="button">Meme It</button>
+                <button type="button">Reset</button>
             </div>
         </div>
     </div>

@@ -1,4 +1,8 @@
 angular.module('dogeMemeApp', [])
 .controller('mainCtrl', function($scope) {
-    $scope.input = '1';
+    
+    $scope.returnInput = function() {
+        console.log($scope.input);
+    };
+   
 });
