@@ -16,6 +16,7 @@
         <h1 class="pt-5 pb-3">Very Meme. Such Doge.</h1>
         <div class="col">
             <img class="doge" src="images/doge-original.jpg" alt="the doge" />
+            <span>{{input}}</span>
         </div>
         <div class="inputs col py-5">
             <h5 class="pb-2">Input Meme Words:</h5>
@@ -24,7 +25,7 @@
             <input ng-model="input" type="text" />
             <input ng-model="input" type="text" />
             <div class="col py-3">
-                <button ng-click="returnInput(input)" type="button">Meme It</button>
+                <button ng-click="returnInputs(input)" type="button">Meme It</button>
                 <button type="button">Reset</button>
             </div>
         </div>

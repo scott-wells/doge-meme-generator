@@ -1,7 +1,7 @@
 angular.module('dogeMemeApp', [])
 .controller('mainCtrl', function($scope) {
     
-    $scope.returnInput = function() {
+    $scope.returnInputs = function() {
         console.log($scope.input);
     };
    
