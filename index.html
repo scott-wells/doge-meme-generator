@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Doge Meme Generator</title>
-
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,900" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-
     <link rel="stylesheet" href="styles/main.css" />
 </head>
-<body>
+<body ng-app="dogeMemeApp">
     <div class="container-fluid text-center">
         
         <h1 class="pt-5 pb-3">Very Meme. Such Doge.</h1>
         <div class="col">
             <img class="doge" src="images/doge-original.jpg" alt="the doge" />
         </div>
-        <div class="inputs col py-3">
-            <label class="d-block">Input Meme Words:</label>
+        <div class="inputs col py-5">
+            <h5 class="pb-2">Input Meme Words:</h5>
             <input type="text" />
             <input type="text" />
             <input type="text" />
@@ -30,5 +30,7 @@
         </div>
     </div>
 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
+    <script src="scripts/app.js" type="text/javascript"></script>
 </body>    
 </html>
