@@ -17,6 +17,7 @@ h1 {
 
 .doge {
     max-width: 50%;
+    max-height: 50vh;
     border-radius: 20px;
     box-shadow: 0 5px 10px -5px #9e8245;
 }
