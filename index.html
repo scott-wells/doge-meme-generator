@@ -6,23 +6,29 @@
 
     <title>Doge Meme Generator</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-
-    <h1>Very Meme. Such Doge.</h1>
-
-    <img src="images/doge-original.jpg" alt="the doge" />
- 
-    <label>Wow. Such text.</label>
-    <input type="text" />
-    <input type="text" />
-    <input type="text" />
-    <input type="text" />
-
-    <button type="submit">Meme It</button>
-    <button type="reset">Reset</button>
-
+    <div class="container-fluid text-center">
+        
+        <h1 class="pt-5 pb-3">Very Meme. Such Doge.</h1>
+        <div class="col">
+            <img class="doge" src="images/doge-original.jpg" alt="the doge" />
+        </div>
+        <div class="inputs col py-3">
+            <label class="d-block">Input Meme Words:</label>
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <div class="col py-3">
+                <button type="submit">Meme It</button>
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+    </div>
 
 </body>    
 </html>

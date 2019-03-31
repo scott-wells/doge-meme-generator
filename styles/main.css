@@ -1,0 +1,15 @@
+
+body {
+    font-family: 'Comic Sans', sans-serif;
+}
+
+.container-fluid {
+    min-height: 100vh;
+    background-color: #DBD0AD;
+}
+
+
+.doge {
+    max-width: 40vw;
+}
+
