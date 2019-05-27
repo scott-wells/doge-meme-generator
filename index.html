@@ -21,18 +21,25 @@
             <img class="doge" src="images/doge-original.jpg" alt="the doge" />
             <!-- <span>Put Meme Words Here</span> -->
         </div>
-        <div class="inputs col py-5">
-            <h5 class="pb-2">Input Meme Words:</h5>
-            <input class="meme-input" type="text" name="input-1" placeholder="wow" />
-            <input class="meme-input" type="text" name="input-2" placeholder="very" />
-            <input class="meme-input" type="text" name="input-3" placeholder="such" />
-            <input class="meme-input" type="text" name="input-4" placeholder="many" />
+        <div class="col py-5">
+            <form class="add-items">
+                <input type="text" name="item" placeholder="Item Name" required>
+                <input type="submit" value="+ Add Item">
+            </form>
 
-            <div class="col py-3">
-                <input type="submit" value="Meme It">
-                <button type="button" name="reset">Reset</button>
-            </div>
-            
+            <!-- <form class="inputs">
+                <h5 class="pb-2">Input Meme Words:</h5>
+                <input class="meme-input" type="text" name="input-1" placeholder="wow" />
+                <input class="meme-input" type="text" name="input-2" placeholder="very" />
+                <input class="meme-input" type="text" name="input-3" placeholder="such" />
+                <input class="meme-input" type="text" name="input-4" placeholder="many" />
+
+                <div class="col py-3">
+                    <input type="submit" value="Meme It">
+                    <button type="button" name="reset">Reset</button>
+                </div>
+            </form> -->
+
             <div>
                 <p class="meme-output"></p>
             </div>
@@ -41,25 +48,41 @@
 
     <script>
         /* 
-        1. Select inputs, buttons
-        2. Write function to add text from input to span
-        3. Add event listeners on buttons
-        4. Write function to make inputed text turn a random color
-        5. Put span text on the picture
-        6. Create array of meme text
+        1. Select input, button
+        2. Write function to return text value on form submit
+        3. Add event listener for submit button
+        4. Create an empty span for the inputed text to live
+        5. Write a function that takes the returned text and adds it to the span
+        6. Do this for all four inputs
+        7. Select reset button
+        8. Write a function that resets the inputs and deletes text
+        9. Position the spans on the meme image
+        10. Write a function that generates a random color and adds color to the span text
         */
 
-        const memeInputs = document.querySelector('input[name="input-1"]');
-        const memeOutput = document.querySelector('p.meme-output');
-        const memeItBtn = document.querySelector('input[type="submit"]');
-        console.log(memeItBtn);
+        // const memeInput = document.querySelector('input[name="input-1"]');
+        // const memeOutput = document.querySelector('p.meme-output');
+        // const memeItBtn = document.querySelector('input[type="submit"]');
+
+        const addItems = document.querySelector('.add-items');
         
-        function addInputs() {
-            
-            console.log(this);
+        function addItem(e) {
+            e.preventDefault();
+            const text = (this.querySelector('[name=item]')).value;
+            const item = {
+            text,
+            done: false
+            };
+            console.log(e);
+
         }
 
-        memeItBtn.addEventListener('submit', addInputs);
+        // function addInputs() {
+        //     console.log("This button worked!");
+        // }
+
+        addItems.addEventListener('submit', addItem);
+        // memeItBtn.addEventListener('submit', addInputs);
 
     </script>
 
