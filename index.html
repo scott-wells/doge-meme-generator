@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Doge Meme Generator</title>
-    
+
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,900" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles/main.css" />
 </head>
-<body ng-app="dogeMemeApp">
-    <div class="container-fluid text-center" ng-controller="mainCtrl">
-        
+
+<body>
+    <div class="container-fluid text-center">
+
         <h1 class="pt-5 pb-3">Very Meme. Such Doge.</h1>
         <div class="col">
             <img class="doge" src="images/doge-original.jpg" alt="the doge" />
-            <span>{{input}}</span>
+            <!-- <span>Put Meme Words Here</span> -->
         </div>
         <div class="inputs col py-5">
             <h5 class="pb-2">Input Meme Words:</h5>
-            <input ng-model="input" type="text" />
-            <input ng-model="input" type="text" />
-            <input ng-model="input" type="text" />
-            <input ng-model="input" type="text" />
+            <input class="meme-input" type="text" name="input-1" placeholder="wow" />
+            <input class="meme-input" type="text" name="input-2" placeholder="very" />
+            <input class="meme-input" type="text" name="input-3" placeholder="such" />
+            <input class="meme-input" type="text" name="input-4" placeholder="many" />
+
             <div class="col py-3">
-                <button ng-click="returnInputs(input)" type="button">Meme It</button>
-                <button type="button">Reset</button>
+                <input type="submit" value="Meme It">
+                <button type="button" name="reset">Reset</button>
+            </div>
+            
+            <div>
+                <p class="meme-output"></p>
             </div>
         </div>
     </div>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
-    <script src="scripts/app.js" type="text/javascript"></script>
-</body>    
+    <script>
+        /* 
+        1. Select inputs, buttons
+        2. Write function to add text from input to span
+        3. Add event listeners on buttons
+        4. Write function to make inputed text turn a random color
+        5. Put span text on the picture
+        6. Create array of meme text
+        */
+
+        const memeInputs = document.querySelector('input[name="input-1"]');
+        const memeOutput = document.querySelector('p.meme-output');
+        const memeItBtn = document.querySelector('input[type="submit"]');
+        console.log(memeItBtn);
+        
+        function addInputs() {
+            
+            console.log(this);
+        }
+
+        memeItBtn.addEventListener('submit', addInputs);
+
+    </script>
+
+</body>
+
 </html>
