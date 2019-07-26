@@ -32,6 +32,13 @@ class UI {
         // append to parent element
         list.appendChild(words);
     }
+
+    static clearFields() {
+        document.querySelector('#word-1').value = '';
+        document.querySelector('#word-2').value = '';
+        document.querySelector('#word-3').value = '';
+        document.querySelector('#word-4').value = '';
+    }
 }
 
 
@@ -49,6 +56,8 @@ document.querySelector('#meme-input').addEventListener('submit', (e) => {
     const meme = new Meme(wordOne, wordTwo, wordThree, wordFour);
 
     UI.addMemeToList(meme);
+
+    UI.clearFields();
 
 });
 

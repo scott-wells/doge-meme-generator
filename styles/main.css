@@ -34,7 +34,7 @@ li.red {
     color: red;
     font-weight: 900;
     position: relative;
-    top: -680px;
+    top: -715px;
     left: -215px;
     transform: scale(2.4);
 }
@@ -43,7 +43,7 @@ li.yellow {
     color: yellow;
     font-weight: 400;
     position: relative;
-    top: -450px;
+    top: -485px;
     left: 225px;
     transform: rotate(6deg) scale(1.4);
 }
@@ -52,7 +52,7 @@ li.blue {
     color: blue;
     font-weight: 400;
     position: relative;
-    top: -550px;
+    top: -585px;
     left: -250px;
     transform: rotate(-4deg) scale(1.8);
 }
@@ -61,7 +61,7 @@ li.green {
     color: limegreen;
     font-weight: 400;
     position: relative;
-    top: -725px;
+    top: -760px;
     left: 185px;
     transform: rotate(-2deg) scale(1.6);
 }
@@ -70,7 +70,7 @@ li.purple {
     color: purple;
     font-weight: 900;
     position: relative;
-    top: -410px;
+    top: -445px;
     left: -225px;
     transform: rotate(4deg) scale(1.4);
 }
