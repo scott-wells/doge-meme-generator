@@ -26,17 +26,17 @@ input[type="text"] {
     padding-left: 10px;
 }
 
-ul {
-    text-decoration: none;
+.no-bullet {
+    list-style: none;
 }
 
 li.red {
     color: red;
     font-weight: 900;
     position: relative;
-    top: -700px;
+    top: -680px;
     left: -215px;
-    transform: scale(1.8);
+    transform: scale(2.4);
 }
 
 li.yellow {
@@ -45,7 +45,7 @@ li.yellow {
     position: relative;
     top: -450px;
     left: 225px;
-    transform: rotate(6deg) scale(1.6);
+    transform: rotate(6deg) scale(1.4);
 }
 
 li.blue {
@@ -53,16 +53,16 @@ li.blue {
     font-weight: 400;
     position: relative;
     top: -550px;
-    left: -260px;
-    transform: rotate(-4deg) scale(1.5);
+    left: -250px;
+    transform: rotate(-4deg) scale(1.8);
 }
 
 li.green {
     color: limegreen;
     font-weight: 400;
     position: relative;
-    top: -750px;
-    left: 175px;
+    top: -725px;
+    left: 185px;
     transform: rotate(-2deg) scale(1.6);
 }
 
@@ -70,8 +70,8 @@ li.purple {
     color: purple;
     font-weight: 900;
     position: relative;
-    top: -420px;
+    top: -410px;
     left: -225px;
-    transform: rotate(4deg) scale(1.6);
+    transform: rotate(4deg) scale(1.4);
 }
 

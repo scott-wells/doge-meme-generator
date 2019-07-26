@@ -22,11 +22,11 @@ class UI {
         
         // set its inner html
         words.innerHTML = `
-            <li class="red">${leadWords[0]}</li>
-            <li class="yellow">${leadWords[0]} ${meme.wordOne}</li>
-            <li class="blue">${leadWords[1]} ${meme.wordTwo}</li>
-            <li class="green">${leadWords[2]} ${meme.wordThree}</li>
-            <li class="purple">${leadWords[3]} ${meme.wordFour}</li>
+            <li class="red no-bullet">${leadWords[0]}</li>
+            <li class="yellow no-bullet">${leadWords[0]} ${meme.wordOne}</li>
+            <li class="blue no-bullet">${leadWords[1]} ${meme.wordTwo}</li>
+            <li class="green no-bullet">${leadWords[2]} ${meme.wordThree}</li>
+            <li class="purple no-bullet">${leadWords[3]} ${meme.wordFour}</li>
         `;
 
         // append to parent element
