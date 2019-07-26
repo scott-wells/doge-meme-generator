@@ -25,3 +25,53 @@ h1 {
 input[type="text"] {
     padding-left: 10px;
 }
+
+ul {
+    text-decoration: none;
+}
+
+li.red {
+    color: red;
+    font-weight: 900;
+    position: relative;
+    top: -700px;
+    left: -215px;
+    transform: scale(1.8);
+}
+
+li.yellow {
+    color: yellow;
+    font-weight: 400;
+    position: relative;
+    top: -450px;
+    left: 225px;
+    transform: rotate(6deg) scale(1.6);
+}
+
+li.blue {
+    color: blue;
+    font-weight: 400;
+    position: relative;
+    top: -550px;
+    left: -260px;
+    transform: rotate(-4deg) scale(1.5);
+}
+
+li.green {
+    color: limegreen;
+    font-weight: 400;
+    position: relative;
+    top: -750px;
+    left: 175px;
+    transform: rotate(-2deg) scale(1.6);
+}
+
+li.purple {
+    color: purple;
+    font-weight: 900;
+    position: relative;
+    top: -420px;
+    left: -225px;
+    transform: rotate(4deg) scale(1.6);
+}
+

@@ -18,18 +18,16 @@ class UI {
         const list = document.querySelector('#meme-list');
 
         //create a new element to insert
-        const words = document.createElement('span');
+        const words = document.createElement('ul');
         
         // set its inner html
         words.innerHTML = `
-            ${leadWords[0]} ${meme.wordOne} 
-            ${leadWords[1]} ${meme.wordTwo} 
-            ${leadWords[2]} ${meme.wordThree} 
-            ${leadWords[3]} ${meme.wordFour} 
+            <li class="red">${leadWords[0]}</li>
+            <li class="yellow">${leadWords[0]} ${meme.wordOne}</li>
+            <li class="blue">${leadWords[1]} ${meme.wordTwo}</li>
+            <li class="green">${leadWords[2]} ${meme.wordThree}</li>
+            <li class="purple">${leadWords[3]} ${meme.wordFour}</li>
         `;
-
-        // stick the words on the picture with a random color and size
-        // might be easier to reveal the position once submit is clicked
 
         // append to parent element
         list.appendChild(words);
